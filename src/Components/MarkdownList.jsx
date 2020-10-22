@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import moment from 'moment';
 import Nav from './Nav';
 
@@ -10,6 +10,17 @@ const MarkdownList = () => {
         const archive = {};
         const keys = Object.keys(localStorage);
         let i = keys.length;
+        
+/*         while (true) {
+            if (i === 0) {
+                i = i - 1;
+                break;
+            }
+            i = i - 1;
+            ...do stuff...
+        }  */
+        
+        
         while (i--){
             const note = JSON.parse(window.localStorage.getItem(keys[i]));
             archive[keys[i]] = {

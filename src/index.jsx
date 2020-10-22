@@ -5,7 +5,6 @@ import './styles/index.scss';
 import Content from './Components/MarkdownList';
 
 const App = () => {
-  const thisIsAPlaceHolder = 'hello';
   return (<Content />);
 };
 
